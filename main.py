@@ -6,10 +6,10 @@ import pandas as pd
 from streamlit.runtime.state import widgets
 import requests
 from streamlit_lottie import st_lottie
-#import project_related
-#import projects_decriptions
-#import boxes
-#import contact_info
+import project_related
+import projects_decriptions
+import boxes
+import contact_info
 
 st.set_page_config(layout='wide', page_title="My Portfolio Website", page_icon="🚀")
 
@@ -171,8 +171,7 @@ if selected == 'project':
         with st.container():
             selected = option_menu(
                 menu_title=None,
-                options=['12TH MAN', 'Inshort News Clone', 'Using Tableau', 'My NLP APP', 'My Porfolio Website',
-                         'Face Detection', 'Flight Dashboard'],
+                options=['IPL RestAPI', 'Inshort News Clone', 'My Porfolio Website'],
                 icons=['code-slash', 'code-slash', 'code-slash', 'code-slash', 'code-slash', 'code-slash',
                        'code-slash'],
 
@@ -258,7 +257,7 @@ if selected == 'project':
             st.write("- Live News: Get real-time news updates from various sources.")
             st.write("- User-Friendly: The app provides a clean and intuitive user interface.")
 
-    if selected == '12TH MAN':
+    if selected == 'IPL RestAPI':
         with col2:
             project_name = '12TH MAN'
             st.subheader(project_name)
